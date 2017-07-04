@@ -1,3 +1,4 @@
-#Chap 1 - Javascript Drum Kit
+# Chap 01 - JavaScript Drum Kit
+
 
 參考文獻：https://javascript30.com/
