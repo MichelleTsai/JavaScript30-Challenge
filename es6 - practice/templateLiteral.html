@@ -1,0 +1,29 @@
+<html>
+<body>
+</body>
+<script>
+let component_es6 = `
+<header>
+    <div class='banner'>
+        <img src="img1.jpg>
+    </div>
+</header>
+`
+// console.log(component_es6);
+let name = 'Michelle', num1 = 4, num2 = 5;
+let content = `My name is ${name} and my age is ${num1 + num2}`;
+
+// console.log(content);
+// console.log `My name is ${name} and my age is ${num1 + num2}`
+tag `My name is ${name} and my age is ${num1 + num2}`;
+// function tag(template){
+//   console.log(template);
+//   console.log(arguments);
+// }
+
+function tag(template, ...values){
+  console.log(template);
+  console.log(values);
+}
+</script>
+</html>
