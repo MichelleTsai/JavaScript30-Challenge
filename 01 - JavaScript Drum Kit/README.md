@@ -7,7 +7,12 @@
 * `transitionened`事件
 * es6 forEach
 
-## `transitionened`事件，這個 transitionend 事件主要是對應到 CSS 中 transition 的動畫效果，當這個 transition 效果執行結束的時候會引發事件。
+`transitionened`事件，這個 transitionend 事件主要是對應到 CSS 中 transition 的動畫效果，當這個 transition 效果執行結束的時候會引發事件。
+
+```Javascript
+keys.forEach((key) => {key.addEventListener('transitionend', removeTransition)});
+```
+
 ```CSS
 .key {
   border: .4rem solid black;
