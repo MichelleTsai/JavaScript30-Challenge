@@ -19,7 +19,19 @@ img {
 * 自定義的CSS變數，開頭必須是兩個破折號 `--`
 * 在要呼叫變數的選擇器裡面，使用`var()`呼叫該變數，跟function很像
   * `var()` 只能設定值，不能作為屬性的變數
+  ```CSS
+  .main {
+    --side: margin-top;
+    var(--side): 20px;
+  }
+  ```
   * `var()` 不能直接合併單位
+  ```CSS
+  .main {
+    --gap: 20;
+    margin-top: var(--gap)px;
+  }
+  ```
 * JavaScript 讀寫 CSS 變數
   * 讀取： `getPropertyValue()`
   * 寫入： `setProperty()`
