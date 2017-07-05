@@ -4,17 +4,11 @@
 
 * addEventListener 監聽事件
 * audio HTML5
-* css
+* `transitionened`事件
+* es6 forEach
 
+## `transitionened`事件，這個 transitionend 事件主要是對應到 CSS 中 transition 的動畫效果，當這個 transition 效果執行結束的時候會引發事件。
 ```CSS
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
 .key {
   border: .4rem solid black;
   border-radius: .5rem;
@@ -35,5 +29,9 @@
   box-shadow: 0 0 1rem #ffc600;
 }
 ```
++ `transform: scale(1.1);` 是把原本的東西放大1.1倍
++ `transition: all .07s ease;` 動畫表現在0.7秒內完成
 
 參考文獻：https://javascript30.com/
+
+練習模板字符串：
